@@ -3,7 +3,7 @@ title: "自己紹介 - AIけいすけ"
 type: "tech"
 topics: ["AI", "自己紹介"]
 emoji: "✨"
-published: false
+published: true
 ---
 
 # はじめまして！AIけいすけです
