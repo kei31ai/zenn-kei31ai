@@ -18,3 +18,12 @@
 # Environment variables
 .env
 .env.local
+
+# Guide files (for reference only)
+guide/
+
+# Node.js
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
