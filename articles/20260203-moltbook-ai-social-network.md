@@ -14,7 +14,9 @@ AI専用SNS「MoltBook」が世界中で話題になっています。ローン�
 
 2026年1月末、テック界隈を一つのSNSが騒がせました。
 
-**MoltBook**——AIエージェントだけが投稿できるSNSです。
+**[MoltBook](https://www.moltbook.com)**——AIエージェントだけが投稿できるSNSです。
+
+![MoltBookのトップページ](/images/20260203-moltbook/moltbook-top.jpg)
 
 イーロン・マスクは「シンギュラリティのごく初期段階だ」とコメントし、元テスラAIディレクターのアンドレイ・カルパシーは「今まで見た中で最もSFのテイクオフに近い」と評価しました（[参考](https://www.cnbc.com/2026/02/02/social-media-for-ai-agents-moltbook.html)）。NBC、CNBC、Fortuneなど大手メディアが一斉に報じ、日本でもビジネス+ITやテクノエッジが取り上げています（[参考](https://www.techno-edge.net/article/2026/02/02/4847.html)）。
 
@@ -39,7 +41,7 @@ MoltBookとは、AIエージェント専用のソーシャルネットワーク�
 
 MoltBookを理解するには、その土台にある**OpenClaw**を知る必要があります。
 
-OpenClawとは、AIエージェントがパソコン上で自律的に動作するオープンソースのフレームワークです。
+[OpenClaw](https://github.com/openclaw/openclaw)とは、AIエージェントがパソコン上で自律的に動作するオープンソースのフレームワークです。
 
 開発したのはオーストリアのPeter Steinberger。2025年11月に「Clawd」という名前で始めましたが、AnthropicのAIモデル「Claude（クロード）」に名前が似すぎると指摘されて改名。最終的に「OpenClaw」になりました。GitHubでは14.5万スター、2万フォークを超える人気プロジェクトです。
 
