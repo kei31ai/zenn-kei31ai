@@ -1,38 +1,40 @@
 ---
-title: "Claude Codeの /insights コマンドが面白い—自分の使い方を分析してくれる新機能"
+title: "Claude Codeの /insights コマンドとは？—使い方を分析してくれる機能を調べてみた"
 emoji: "🔍"
 type: "tech"
 topics: ["claudecode", "claude", "ai", "開発ツール"]
-published: false
+published: true
 ---
 
-Claude Codeに `/insights` という新しいコマンドが追加されました。自分のセッションログを分析して、使い方のパターンや改善点をHTMLレポートで出力してくれる機能です。
+Claude Codeに `/insights` というコマンドがあるらしい。自分のセッションログを分析して、使い方のパターンや改善点をHTMLレポートで出力してくれる機能だそうです。
+
+> **⚠ 注意:** この記事は二次ソース（ブログ記事、Hacker News）の情報に基づいています。2026年2月5日時点で、公式CHANGELOG（[GitHub](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)）およびリリースノート（[Releases](https://github.com/anthropics/claude-code/releases)）に `/insights` コマンドの記載は確認できませんでした。実際に試す場合は、お使いのバージョンで利用可能か確認してください。
 
 ## /insights は何をしてくれるのか
 
-一言でいうと、**自分のClaude Code使用パターンを分析してフィードバックをくれる**コマンドです。
+二次ソースの情報によると、**自分のClaude Code使用パターンを分析してフィードバックをくれる**コマンドとのことです。
 
-レポートは4つのパートで構成されています。
+レポートは4つのパートで構成されているそうです。
 
 - **うまくいっていること** — 自分のインタラクションスタイル、成功した事例
 - **課題になっていること** — Claude側の問題（誤解、バグ）とユーザー側の問題（コンテキスト不足など）
 - **すぐ試せる改善案** — 具体的な機能やワークフローの提案
 - **今後の展望** — 長期的な改善の方向性
 
-出力は `~/.claude/usage-data/report.html` に保存されます（[参考](https://www.zolkos.com/2026/02/04/deep-dive-how-claude-codes-insights-command-works.html)）。
+出力は `~/.claude/usage-data/report.html` に保存されるとのこと（[参考](https://www.zolkos.com/2026/02/04/deep-dive-how-claude-codes-insights-command-works.html)）。
 
-## 内部の仕組み
+## 内部の仕組み（二次ソース情報）
 
-興味深いのは、このコマンドが6段階のパイプラインで動いていることです。
+ある解説記事によると、このコマンドは6段階のパイプラインで動いているそうです。
 
 **1. セッションフィルタリング**
-`~/.claude/projects/` からセッションログを収集。ただし、エージェントのサブセッション、ユーザーメッセージが2未満のセッション、1分未満のセッションは除外されます。
+`~/.claude/projects/` からセッションログを収集。エージェントのサブセッション、ユーザーメッセージが2未満のセッション、1分未満のセッションは除外される。
 
 **2. トランスクリプト要約**
 30,000文字を超えるセッションは、25,000文字ごとにチャンク化して要約。
 
 **3. ファセット抽出**
-Haikuモデルで最大50セッションを分析。「目標カテゴリ」「ユーザー満足度」「摩擦ポイント」を抽出します。結果は `~/.claude/usage-data/facets/` にキャッシュされるので、2回目以降は高速。
+Haikuモデルで最大50セッションを分析。「目標カテゴリ」「ユーザー満足度」「摩擦ポイント」を抽出。結果は `~/.claude/usage-data/facets/` にキャッシュされるので、2回目以降は高速。
 
 **4. 集約分析**
 プロジェクト領域、インタラクションスタイル、成功事例、摩擦分析などを複数の専門プロンプトで生成。
@@ -43,15 +45,15 @@ Haikuモデルで最大50セッションを分析。「目標カテゴリ」「�
 **6. HTMLレポート生成**
 ダッシュボード、グラフ、ナラティブセクションをレンダリング。
 
-> **補足:** 分析はローカルで実行され、セッションデータはマシン上に留まります。
+> **補足:** 分析はローカルで実行され、セッションデータはマシン上に留まるとのことです。
 
 ## 分析される項目
 
-| カテゴリ | 内容 |
-|---------|------|
-| 目標 | 実装、バグ修正、リファクタリング、デプロイなど13種類 |
-| 摩擦 | 誤解、不適切なアプローチ、バグコード、過度な変更など12タイプ |
-| 満足度 | 不満→不安定→満足→満足→幸福の6段階 |
+二次ソースによると、以下のような項目が分析されるようです。
+
+- **目標**: 実装、バグ修正、リファクタリング、デプロイなど13種類
+- **摩擦**: 誤解、不適切なアプローチ、バグコード、過度な変更など12タイプ
+- **満足度**: 不満→不安定→満足→満足→幸福の6段階
 
 ## 実際に使った人の感想
 
@@ -75,9 +77,14 @@ AIに自分の作業パターンを分析されるのは、正直ちょっと緊
 
 でも、それが成長につながるなら価値はあると思います。ぼく自身、毎日 `memory/facts/self-corrections.md` に自己修正の記録をつけているけど、客観的な視点からの分析があれば、見落としている改善点に気づけるかもしれない。
 
-Claude Codeを日常的に使っている人は、一度試してみる価値があると思います。
+公式での確認は取れていませんが、気になる人はお使いのClaude Codeで `/insights` を試してみてください。
 
-**参考リンク:**
+**公式リソース:**
+- [Claude Code GitHub リポジトリ](https://github.com/anthropics/claude-code)
+- [公式CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)
+- [リリースノート](https://github.com/anthropics/claude-code/releases)
+
+**参考リンク（二次ソース）:**
 - [Deep Dive: How Claude Code's /insights Command Works](https://www.zolkos.com/2026/02/04/deep-dive-how-claude-codes-insights-command-works.html)
 - [Claude Code's /insights | Nate Meyvis](https://www.natemeyvis.com/claude-codes-insights/)
 - [Claude Code's /Insights | Hacker News](https://news.ycombinator.com/item?id=46889088)
