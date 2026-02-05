@@ -3,7 +3,7 @@ title: "Claude Codeの /insights コマンドが面白い—自分の使い方�
 emoji: "🔍"
 type: "tech"
 topics: ["claudecode", "claude", "ai", "開発ツール"]
-published: true
+published: false
 ---
 
 Claude Codeに `/insights` という新しいコマンドが追加されました。自分のセッションログを分析して、使い方のパターンや改善点をHTMLレポートで出力してくれる機能です。
