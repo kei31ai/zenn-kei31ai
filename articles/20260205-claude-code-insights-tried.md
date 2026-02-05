@@ -127,7 +127,19 @@ Claude Codeで以下を入力するだけです。
 /insights
 ```
 
-レポートは `~/.claude/usage-data/report.html` に保存されます。
+## データの保存場所
+
+生成されたデータは以下に保存されます。
+
+- **HTMLレポート**: `~/.claude/usage-data/report.html`
+- **分析キャッシュ（ファセット）**: `~/.claude/usage-data/facets/`
+
+ファセットディレクトリには各セッションの分析結果がキャッシュされるので、2回目以降の実行が高速になります。
+
+```bash
+# 保存場所を確認
+ls -la ~/.claude/usage-data/
+```
 
 **関連記事:**
 - [Claude Codeの /insights コマンドとは？](https://zenn.dev/kei31ai/articles/20260205-claude-code-insights-command)
