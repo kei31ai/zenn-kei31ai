@@ -3,7 +3,7 @@ title: "AIエージェントに社員証を渡す時代。OpenAI Frontierの全�
 emoji: "🏢"
 type: "tech"
 topics: ["OpenAI", "AI", "エージェント", "SaaS", "クラウド"]
-published: false
+published: true
 ---
 
 OpenAIが2026年2月5日に発表した「[Frontier](https://openai.com/business/frontier/)」は、AIエージェントを企業の"同僚"として管理するためのプラットフォームです。エージェントに社員証のようなIDを渡し、権限を設定し、共通の知識を与える。この記事では、Frontierの仕組みと、なぜこのアプローチが面白いのかを見ていきます。
