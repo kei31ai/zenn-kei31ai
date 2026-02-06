@@ -2,7 +2,7 @@
 title: "AIエージェントに社員証を渡す時代。OpenAI Frontierの全貌"
 emoji: "🏢"
 type: "tech"
-topics: ["OpenAI", "AIエージェント", "エンタープライズ", "AI", "Frontier"]
+topics: ["OpenAI", "AI", "エージェント", "SaaS", "クラウド"]
 published: true
 ---
 
