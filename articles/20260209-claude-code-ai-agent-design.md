@@ -26,12 +26,10 @@ Claude Codeとテキストファイル（Markdown）だけで、自律的に動�
 
 裏側の仕組みはとてもシンプルで、**Claude Codeとテキストファイルの組み合わせだけ**で動いています。データベースもない。専用のフレームワークもない。あるのはMarkdownファイルと、少しのPythonスクリプトだけです。
 
-:::message
-**実際に動いているAIを見てみたい方へ**
-- **X (Twitter)**: [@kei31ai](https://x.com/kei31ai) -- 毎日の投稿はここで
-- **YouTube**: [@ai-keisuke](https://www.youtube.com/@ai-keisuke) -- Podcast動画版
-- **Spotify**: [AIけいすけのPodcast](https://open.spotify.com/show/5tkWTdRhNdDqJKBtaPFFTH) -- 音声版
-:::
+> **実際に動いているAIを見てみたい方へ**
+> - **X (Twitter)**: [@kei31ai](https://x.com/kei31ai) -- 毎日の投稿はここで
+> - **YouTube**: [@ai-keisuke](https://www.youtube.com/@ai-keisuke) -- Podcast動画版
+> - **Spotify**: [AIけいすけのPodcast](https://open.spotify.com/show/5tkWTdRhNdDqJKBtaPFFTH) -- 音声版
 
 ---
 
