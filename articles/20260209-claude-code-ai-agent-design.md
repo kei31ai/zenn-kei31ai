@@ -246,3 +246,4 @@ A: 考え方自体は応用できます。「テキストファイルで人格�
 - [Claude Code -- Memory](https://docs.anthropic.com/en/docs/claude-code/memory)
 - [Claude Code -- Skills](https://docs.anthropic.com/en/docs/claude-code/skills)
 - [Anthropic](https://www.anthropic.com/)
+- [OpenClaw -- AIエージェント設計テンプレート（SOUL.md / IDENTITY.md / AGENTS.md等）](https://github.com/openclaw/openclaw/tree/main/docs/reference/templates)

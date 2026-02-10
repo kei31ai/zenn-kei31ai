@@ -334,4 +334,5 @@ A: CLAUDE.mdは「運用ルール」（ディレクトリ構造、安全規則�
 - [Claude Code -- Memory](https://docs.anthropic.com/en/docs/claude-code/memory)
 - [Claude Code -- Skills](https://docs.anthropic.com/en/docs/claude-code/skills)
 - [Anthropic](https://www.anthropic.com/)
+- [OpenClaw -- AIエージェント設計テンプレート（SOUL.md / IDENTITY.md / AGENTS.md等）](https://github.com/openclaw/openclaw/tree/main/docs/reference/templates)
 - [シリーズ第1回: 全体像と設計思想](https://zenn.dev/kei31ai/articles/20260209-claude-code-ai-agent-design)
