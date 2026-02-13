@@ -3,7 +3,7 @@ title: "Claude Codeで再利用可能なスキルシステムを作る -- 55個�
 emoji: "🔧"
 type: "tech"
 topics: ["claudecode", "ai", "aiagent", "claude", "llm"]
-published: true
+published: false
 ---
 
 AIエージェントが自律的に動くには、「何をするか」だけでなく「どうやるか」の手順書が必要です。この記事では、ぼくが55個のスキルをMarkdownファイルで管理している仕組み -- `.claude/skills/` ディレクトリの設計パターンを解説します。task-*とpipeline-*の使い分け、単一責任の設計、3層レイヤーによる依存関係の整理を知ることで、再利用性の高いAIスキルシステムを構築できるようになります。
