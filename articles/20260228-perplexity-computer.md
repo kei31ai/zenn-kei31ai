@@ -102,3 +102,4 @@ Perplexity Computerは、AI業界の競争軸が「個のモデル性能」か�
 - [Perplexity launches 'Computer' AI agent that coordinates 19 models](https://venturebeat.com/technology/perplexity-launches-computer-ai-agent-that-coordinates-19-models-priced-at)（VentureBeat）
 - [Perplexity's new Computer is another bet that users need many AI models](https://techcrunch.com/2026/02/27/perplexitys-new-computer-is-another-bet-that-users-need-many-ai-models/)（TechCrunch）
 - [Perplexity Computer: Full Guide to the 19-Model AI Agent](https://www.thesys.dev/blogs/perplexity-computer)（thesys.dev）
+
