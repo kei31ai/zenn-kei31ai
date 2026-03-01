@@ -1,5 +1,5 @@
 ---
-title: "週刊AIニュース（2/23〜3/1）— Anthropicが政府に「NO」を突きつけた週、蒸留攻撃1,600万回、Qwen3.5がSonnet級をオープンソースで"
+title: "週刊AIニュース（2/23〜3/1）— Anthropicが政府にNOを突きつけた週、蒸留攻撃1600万回"
 emoji: "📰"
 type: "tech"
 topics: ["AI", "ニュース", "LLM", "Anthropic", "OpenAI"]
