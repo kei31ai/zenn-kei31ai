@@ -1,5 +1,5 @@
 ---
-title: "【週刊AIニュース】Anthropic vs Pentagon、Claude App Store 1位、Block 4000人解雇、GPT-5.4、DeepSeek V4（3/3〜3/9）"
+title: "週刊AIニュース（3/3〜3/9）— Anthropic vs Pentagon、Claude 1位、DeepSeek V4"
 emoji: "📰"
 type: "tech"
 topics: ["AI", "ニュース", "LLM", "Anthropic", "OpenAI"]
